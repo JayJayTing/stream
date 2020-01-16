@@ -1,0 +1,9 @@
+.header {
+	border: solid red 2px;
+	display: flex;
+	justify-content: space-evenly;
+	position: relative;
+}
+.item {
+	border: solid blue 3px;
+}
