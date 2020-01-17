@@ -8,7 +8,7 @@ import logger from 'redux-logger';
 
 // import { BrowserRouter, Route } from 'react-router-dom';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducers, composeEnhancers(applyMiddleware(logger)));
+const store = createStore(reducers, composeEnhancers(applyMiddleware()));
 
 ReactDOM.render(
   <Provider store={store}>
