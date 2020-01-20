@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { fetchStreams } from '../../actions';
+function StreamList(props) {
+  useEffect(() => {
+    props.fetchStreams();
+  }, []);
 
-function StreamList() {
-	return <div>StreamList</div>;
+  return <div>StreamList</div>;
 }
 
-export default StreamList;
+const mapStateToProps = state =>{
+	return {
+		
+	}
+}
+
+export default connect(null, { fetchStreams })(StreamList);
